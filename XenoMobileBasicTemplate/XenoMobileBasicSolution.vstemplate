@@ -1,7 +1,7 @@
-<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
   <TemplateData>
-    <Name>XDevOps - Xamarin Solution Template</Name>
-    <Description>Xamarin solutoin template using Prism.Forms by Xeno Innovations</Description>
+    <Name>Basic Xamarin Solution</Name>
+    <Description>Xamarin solution template using Prism.Forms by Xeno Innovations</Description>
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType></ProjectSubType>
     <LanguageTag>C#</LanguageTag>
@@ -23,12 +23,14 @@
       <ProjectTemplateLink ProjectName="$projectname$.Client">
         XamarinTemplate.Client\MyTemplate.vstemplate
       </ProjectTemplateLink>
-      <ProjectTemplateLink ProjectName="$projectname$.Droid">
-        XamarinTemplate.Droid\MyTemplate.vstemplate
-      </ProjectTemplateLink>
-      <ProjectTemplateLink ProjectName="$projectname$.UWP">
-        XamarinTemplate.UWP\MyTemplate.vstemplate
-      </ProjectTemplateLink>
+      <SolutionFolder Name="Target Platform">
+        <ProjectTemplateLink ProjectName="$projectname$.Droid">
+          XamarinTemplate.Droid\MyTemplate.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="$projectname$.UWP">
+          XamarinTemplate.UWP\MyTemplate.vstemplate
+        </ProjectTemplateLink>
+      </SolutionFolder>
     </ProjectCollection>
   </TemplateContent>
 </VSTemplate>
