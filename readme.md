@@ -64,3 +64,5 @@ using Xamarin.Essentials.Interfaces;
 ```
 ## References
 * https://docs.microsoft.com/en-us/visualstudio/ide/how-to-create-project-templates?view=vs-2019
+* https://docs.microsoft.com/en-us/visualstudio/ide/how-to-create-multi-project-templates?view=vs-2019
+

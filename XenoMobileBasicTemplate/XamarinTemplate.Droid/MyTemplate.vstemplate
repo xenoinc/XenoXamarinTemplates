@@ -1,0 +1,54 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>XamarinTemplate.Droid</Name>
+    <Description>Xamarin Android Template using Prism</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>XamarinTemplate.Droid</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="XamarinTemplate.Droid.csproj" File="XamarinTemplate.Droid.csproj" ReplaceParameters="true">
+      <Folder Name="Assets" TargetFolderName="Assets">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AboutAssets.txt">AboutAssets.txt</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="LinkerSettings.xml">LinkerSettings.xml</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="MainActivity.cs">MainActivity.cs</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AndroidManifest.xml">AndroidManifest.xml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Resources" TargetFolderName="Resources">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AboutResources.txt">AboutResources.txt</ProjectItem>
+        <Folder Name="layout" TargetFolderName="layout">
+          <ProjectItem ReplaceParameters="false" TargetFileName="Tabbar.axml">Tabbar.axml</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Toolbar.axml">Toolbar.axml</ProjectItem>
+        </Folder>
+        <Folder Name="mipmap-hdpi" TargetFolderName="mipmap-hdpi">
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_launcher.png">ic_launcher.png</ProjectItem>
+        </Folder>
+        <Folder Name="mipmap-mdpi" TargetFolderName="mipmap-mdpi">
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_launcher.png">ic_launcher.png</ProjectItem>
+        </Folder>
+        <Folder Name="mipmap-xhdpi" TargetFolderName="mipmap-xhdpi">
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_launcher.png">ic_launcher.png</ProjectItem>
+        </Folder>
+        <Folder Name="mipmap-xxhdpi" TargetFolderName="mipmap-xxhdpi">
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_launcher.png">ic_launcher.png</ProjectItem>
+        </Folder>
+        <Folder Name="mipmap-xxxhdpi" TargetFolderName="mipmap-xxxhdpi">
+          <ProjectItem ReplaceParameters="false" TargetFileName="ic_launcher.png">ic_launcher.png</ProjectItem>
+        </Folder>
+        <Folder Name="values" TargetFolderName="values">
+          <ProjectItem ReplaceParameters="true" TargetFileName="styles.xml">styles.xml</ProjectItem>
+        </Folder>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
