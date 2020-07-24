@@ -9,7 +9,7 @@ namespace $safeprojectname$
     {
       this.InitializeComponent();
 
-      LoadApplication(new XamarinTemplate.Client.App(new UwpInitializer()));
+      LoadApplication(new $safeprojectname$.Client.App(new UwpInitializer()));
     }
   }
 
