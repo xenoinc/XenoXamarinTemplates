@@ -1,4 +1,4 @@
-# Copyright 2018 Xeno Innovations, Inc
+# Copyright 2019 Xeno Innovations, Inc
 
 # Generic files
 *.bak
@@ -29,7 +29,6 @@
 **/Droid/**/[Rr]esource.[Dd]esigner.cs
 
 # Build results
-TestResults/
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
@@ -70,14 +69,9 @@ TestResult.xml
 /output/*
 !/output/readme.txt
 
-# Misc
-Certificate/
-.vs/
-.vscode/
-.droidres/
 
 ## USER DEFINED
-*.zip
+
 /docs/*.csv
+/docs/backup
 /tests
-/tools
