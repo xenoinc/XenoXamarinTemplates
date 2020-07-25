@@ -1,16 +1,17 @@
 using System;
 using Prism;
 using Prism.Ioc;
-using TemplateApp.Client.ViewModels;
-using TemplateApp.Client.Views;
 using Xamarin.Essentials.Implementation;
 using Xamarin.Essentials.Interfaces;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinTemplate.Client.Services;
+using XamarinTemplate.Client.ViewModels;
+using XamarinTemplate.Client.Views;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 
-namespace TemplateApp.Client
+namespace XamarinTemplate.Client
 {
   public partial class App
   {
@@ -32,7 +33,7 @@ namespace TemplateApp.Client
     {
       InitializeComponent();
 
-      var nav = await NavigationService.NavigateAsync($"{nameof(NavigationPage)}/{nameof(MainPage)}");
+      var nav = await NavigationService.NavigateAsync($"{nameof(LoadingView)}");
       if (!nav.Success)
       {
         // Log the message
@@ -45,10 +46,12 @@ namespace TemplateApp.Client
     {
       // Services
       containerRegistry.RegisterSingleton<IAppInfo, AppInfoImplementation>();
+      containerRegistry.RegisterSingleton<ILogService, LogService>();
 
       // Navigation
       containerRegistry.RegisterForNavigation<NavigationPage>();
       containerRegistry.RegisterForNavigation<MainView, MainViewModel>();
+      containerRegistry.RegisterForNavigation<LoadingView, LoadingViewModel>();
     }
   }
 }

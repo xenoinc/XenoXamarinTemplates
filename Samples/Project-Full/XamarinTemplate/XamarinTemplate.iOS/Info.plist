@@ -23,7 +23,7 @@
 	<key>MinimumOSVersion</key>
 	<string>8.0</string>
 	<key>CFBundleDisplayName</key>
-	<string>TemplateApp</string>
+	<string>XamarinTemplate</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.companyname.appname</string>
 	<key>CFBundleVersion</key>

@@ -1,9 +1,9 @@
 ﻿using Prism;
 using Prism.Ioc;
 
-namespace TemplateApp.Droid
+namespace XamarinTemplate.Droid
 {
-  public class AndroidInitializer : IPlatformInitializer
+  public class MainInitializer : IPlatformInitializer
   {
     public void RegisterTypes(IContainerRegistry containerRegistry)
     {

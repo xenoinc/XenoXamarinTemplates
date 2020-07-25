@@ -16,6 +16,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9046D6A8-541A-4666-976B-2A1DA0D13292}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		CodeMaid.config = CodeMaid.config
 	EndProjectSection
 EndProject
 Global

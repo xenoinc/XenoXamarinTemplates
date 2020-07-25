@@ -24,4 +24,10 @@
     </Compile>
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Update="Views\LoadingView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>

@@ -1,7 +1,7 @@
 ﻿using Prism;
 using Prism.Ioc;
 
-namespace TemplateApp.UWP
+namespace XamarinTemplate.UWP
 {
   public sealed partial class MainPage
   {

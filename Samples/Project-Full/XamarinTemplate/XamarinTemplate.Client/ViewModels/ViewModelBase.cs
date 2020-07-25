@@ -1,7 +1,7 @@
 ﻿using Prism.Mvvm;
 using Prism.Navigation;
 
-namespace TemplateApp.Client.ViewModels
+namespace XamarinTemplate.Client.ViewModels
 {
   public class ViewModelBase : BindableBase, IInitialize, INavigationAware, IDestructible
   {

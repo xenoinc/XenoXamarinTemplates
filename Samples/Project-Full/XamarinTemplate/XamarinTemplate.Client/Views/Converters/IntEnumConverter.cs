@@ -2,7 +2,7 @@
 using System.Globalization;
 using Xamarin.Forms;
 
-namespace TemplateApp.Views.Converters
+namespace XamarinTemplate.Views.Converters
 {
   public class IntEnumConverter : IValueConverter
   {

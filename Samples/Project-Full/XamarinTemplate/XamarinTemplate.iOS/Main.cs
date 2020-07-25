@@ -1,6 +1,6 @@
 ﻿using UIKit;
 
-namespace TemplateApp.iOS
+namespace XamarinTemplate.iOS
 {
   public class Application
   {

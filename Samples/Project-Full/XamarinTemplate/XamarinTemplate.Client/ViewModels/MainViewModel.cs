@@ -1,6 +1,6 @@
 ﻿using Prism.Navigation;
 
-namespace TemplateApp.Client.ViewModels
+namespace XamarinTemplate.Client.ViewModels
 {
   public class MainViewModel : ViewModelBase
   {
