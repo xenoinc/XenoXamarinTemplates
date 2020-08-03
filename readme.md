@@ -15,7 +15,9 @@
 * Xamarin.Essentials.Interfaces - _ViewModel friendly_
 
 ## How to - Update Template Changes
-### Project
+Please note, at this time you cannot include custom files in the Solution template such as ``.gitignore`` or ``.editorconfig``. At least, have not found a way yet.
+
+### Creating a Project Template
 1. Open targeted solution (_basic or full_)
 2. **Project** > **Export Template...**
 3. Select, "_Project template_" and which project to export
@@ -32,11 +34,12 @@
 5. Copy **.ZIP** from "_My Exported Templates_" to our "Templates\XamarinTemplate.XXX" folder
 6. Extract contents into the appropriate project folder
 
-### Solution
+### Creating a Solution Template
+When creating a solution template from scratch, perform the following actions
+
 1. Copy of a project ``.vstemplate`` modified for Solutions.
 2. ``Type`` attribute, ``ProjectGroup``
-3.
-4. Additional tags and attributes:
+3. Additional tags and attributes:
 ```xml
 <ProjectType>CSharp</ProjectType>
 <ProjectSubType></ProjectSubType>
@@ -49,6 +52,14 @@
 <ProjectTypeTag>Xamarin</ProjectTypeTag>
 <ProjectTypeTag>Xeno DevOps</ProjectTypeTag>
 ```
+
+### Bundling and Installing
+1. Create a .ZIP containing the following items. The solution ``.vstemplate`` should be in the root of the ZIP, not a subfolder.
+  * XamarinTemplate.Client
+  * XamarinTemplate.Droid
+  * XamarinTemplate.UWP
+  * XenoMobileBasicSolution.vstemplate
+2. Copy .ZIP to ``%USERPROFILE%\Documents\Visual Studio 2019\Templates\ProjectTemplates\Visual C#\``
 
 ## vNext Features
 ### Full Template
