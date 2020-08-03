@@ -6,6 +6,21 @@
   <Application.Resources>
 
     <!--  Application resource dictionary  -->
+    <Color x:Key="PrimaryColor">#7E7D81</Color>
+    <Color x:Key="AccentColor">#00A5F2</Color>
+    <Color x:Key="TextColor">White</Color>
+
+    <Style TargetType="TabbedPage">
+      <Setter Property="BarBackgroundColor" Value="{StaticResource PrimaryColor}" />
+      <Setter Property="BarTextColor" Value="{StaticResource TextColor}" />
+      <Setter Property="SelectedTabColor" Value="{StaticResource AccentColor}" />
+      <Setter Property="UnselectedTabColor" Value="{StaticResource PrimaryColor}" />
+    </Style>
+
+    <Style TargetType="NavigationPage">
+      <Setter Property="BarBackgroundColor" Value="{StaticResource PrimaryColor}" />
+      <Setter Property="BarTextColor" Value="{StaticResource TextColor}" />
+    </Style>
 
   </Application.Resources>
 </prism:PrismApplication>
