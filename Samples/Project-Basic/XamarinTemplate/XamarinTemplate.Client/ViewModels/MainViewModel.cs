@@ -37,8 +37,11 @@ namespace XamarinTemplate.Client.ViewModels
       var result = await _dialogService.DisplayAlertAsync("Alert", "Display a sample pop-up ActionSheet?", "Accept", "Cancel");
       _log.Debug("Response: " + result);
 
-      var action = await _dialogService.DisplayActionSheetAsync("Sample Action Sheet", "Cancel", null, "Email", "In-App message", "IG");
-      _log.Debug("ActionSheet: " + action);
+      if (result)
+      {
+        var action = await _dialogService.DisplayActionSheetAsync("Sample Action Sheet", "Cancel", null, "Email", "In-App message", "IG");
+        _log.Debug("ActionSheet: " + action);
+      }
     }
 
     private void OnSampleLogging()

@@ -6,35 +6,39 @@ using Prism.Ioc;
 
 namespace $safeprojectname$
 {
-    [Activity(Label = "XamarinTemplate", Icon = "@mipmap/ic_launcher", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
+  [Activity(
+    Label = "XamarinTemplate",
+    Icon = "@mipmap/ic_launcher",
+    Theme = "@style/MainTheme",
+    MainLauncher = true,
+    ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+  public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
+  {
+    protected override void OnCreate(Bundle savedInstanceState)
     {
-        protected override void OnCreate(Bundle savedInstanceState)
-        {
-            TabLayoutResource = Resource.Layout.Tabbar;
-            ToolbarResource = Resource.Layout.Toolbar;
+      TabLayoutResource = Resource.Layout.Tabbar;
+      ToolbarResource = Resource.Layout.Toolbar;
 
-            base.OnCreate(savedInstanceState);
+      base.OnCreate(savedInstanceState);
 
-            Xamarin.Essentials.Platform.Init(this, savedInstanceState);
-            global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            LoadApplication(new $safeprojectname$.Client.App(new AndroidInitializer()));
-        }
-
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Android.Content.PM.Permission[] grantResults)
-        {
-            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-
-            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-        }
+      Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+      global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+      LoadApplication(new Client.App(new AndroidInitializer()));
     }
 
-    public class AndroidInitializer : IPlatformInitializer
+    public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Android.Content.PM.Permission[] grantResults)
     {
-        public void RegisterTypes(IContainerRegistry containerRegistry)
-        {
-            // Register any platform specific implementations
-        }
+      Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+
+      base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
     }
+  }
+
+  public class AndroidInitializer : IPlatformInitializer
+  {
+    public void RegisterTypes(IContainerRegistry containerRegistry)
+    {
+      // Register any platform specific implementations
+    }
+  }
 }
-

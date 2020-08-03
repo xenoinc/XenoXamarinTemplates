@@ -1,7 +1,7 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
   <TemplateData>
     <Name>Basic Mobile App (Xamarin.Forms w. Prism)</Name>
-    <Description>Xamarin solution template using Prism.Forms by Xeno Innovations</Description>
+    <Description>Cross-platform solution template using Xamarin and Prism.Forms by Xeno Innovations (Xeno.Prism.Template)</Description>
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType></ProjectSubType>
     <LanguageTag>C#</LanguageTag>

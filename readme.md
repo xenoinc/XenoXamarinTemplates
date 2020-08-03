@@ -1,10 +1,6 @@
-Coming soon, **Visual Studio Xamarin Project Template Pack** by *Xeno Innovations' DevOps*
-
-
-# vNext Template Features
+**Visual Studio Xamarin.Forms Project Template Pack** by *Xeno Innovations' DevOps*
 
 ## Blank Template Features
-
 ### New Cross Platform App - {ProjectName}
 * Select a template
   * Master-Detail, Tabbed, Shell, Blank
@@ -16,6 +12,47 @@ Coming soon, **Visual Studio Xamarin Project Template Pack** by *Xeno Innovation
 
 ### NuGets
 * Prism.Forms w/ DryIOC
+* Xamarin.Essentials.Interfaces - _ViewModel friendly_
+
+## How to - Update Template Changes
+### Project
+1. Open targeted solution (_basic or full_)
+2. **Project** > **Export Template...**
+3. Select, "_Project template_" and which project to export
+4. Select Template options
+  * Template Name: Keep the same
+  * Description:
+    * Solution: "Cross-platform solution template using Xamarin and Prism.Forms by Xeno Innovations (Xeno.Prism.Template)"
+    * Client: "Xamarin.Forms client template using Prism"
+    * Android: "Xamarin Android Template using Prism"
+    * UWP: "Xamarin UWP Template using Prism"
+  * Icon, Preview Image: *blank*
+  * **Uncheck**: "_Automatically import the template..._"
+  * Click, Finish
+5. Copy **.ZIP** from "_My Exported Templates_" to our "Templates\XamarinTemplate.XXX" folder
+6. Extract contents into the appropriate project folder
+
+### Solution
+1. Copy of a project ``.vstemplate`` modified for Solutions.
+2. ``Type`` attribute, ``ProjectGroup``
+3.
+4. Additional tags and attributes:
+```xml
+<ProjectType>CSharp</ProjectType>
+<ProjectSubType></ProjectSubType>
+<LanguageTag>C#</LanguageTag>
+<PlatformTag>Android</PlatformTag>
+<PlatformTag>Windows</PlatformTag>
+<ProjectTypeTag>Mobile</ProjectTypeTag>
+<ProjectTypeTag>Desktop</ProjectTypeTag>
+<ProjectTypeTag>Linux</ProjectTypeTag>
+<ProjectTypeTag>Xamarin</ProjectTypeTag>
+<ProjectTypeTag>Xeno DevOps</ProjectTypeTag>
+```
+
+## vNext Features
+### Full Template
+Same as the blank app plus these additional items
 
 ### Project Items
 * ``.gitignore``
@@ -26,12 +63,6 @@ Coming soon, **Visual Studio Xamarin Project Template Pack** by *Xeno Innovation
 * Secretes
   * ``secrets.json``
   * ``Secrets.cs``
-
-## Full Template Features
-Same as the blank app plus these additional items
-
-### Project Items
-
 
 
 ## Sample usage
