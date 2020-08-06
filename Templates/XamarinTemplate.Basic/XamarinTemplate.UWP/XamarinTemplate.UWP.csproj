@@ -130,9 +130,9 @@
     <PackageReference Include="Prism.DryIoc.Forms" Version="7.2.0.1422" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\XamarinTemplate.Client\XamarinTemplate.Client.csproj">
+    <ProjectReference Include="..\$safeprojectname$.Client\$safeprojectname$.Client.csproj">
       <Project>{C1A5194B-E404-44CF-8200-B85B06448774}</Project>
-      <Name>XamarinTemplate.Client</Name>
+      <Name>$safeprojectname$.Client</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
