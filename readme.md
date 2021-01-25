@@ -1,4 +1,11 @@
-**Visual Studio Xamarin.Forms Project Template Pack** by *Xeno Innovations' DevOps*
+# XenoDevOps - Xamarin.Forms Template
+
+**Visual Studio Xamarin.Forms Project Template Pack** by *Xeno Innovations' DevOps team*
+
+This template pack creates a new [Xamarin.Forms]() project using [Prism.Forms](https://github.com/PrismLibrary/Prism) with DryIoc and basic services right out of the box for you.
+
+This project is freely available for the community to help maintain and suggest alterations. When [System.Maui]() becomes more stable, we'll have a template warmed up for it.
+
 
 ## Blank Template Features
 ### New Cross Platform App - {ProjectName}
@@ -11,8 +18,16 @@
 * .Net Analyzers
 
 ### NuGets
-* Prism.Forms w/ DryIOC
+* [Prism.Forms](https://github.com/PrismLibrary/Prism) w/ DryIOC
 * Xamarin.Essentials.Interfaces - _ViewModel friendly_
+
+## Roadmap
+| Name | Stage |
+|------|-------|
+| Xeno Template Pack in VS Gallery | ***Backlog*** |
+| New Project Wizard | ***TBD*** |
+| MSBuild command | ***Backlog*** |
+| System.Maui Support | ***TBD*** |
 
 ## How to - Update Template Changes
 Please note, at this time you cannot include custom files in the Solution template such as ``.gitignore`` or ``.editorconfig``. At least, have not found a way yet.
@@ -104,7 +119,37 @@ using Xamarin.Essentials.Interfaces;
     containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
   }
 ```
+
+
+## vNext - Installation
+**Status:** *PROPOSAL*
+**Purpose:** Installs template
+```
+dotnet new -i "XenoXamarinTemplate"
+```
+
+## Creating a Project
+**Status:** *PROPOSAL*
+```
+dotnet new XenoMobile -n "My.Project"
+```
+
+## Syncing up
+**Status:** *PROPOSAL*
+**Purpose:** Sync up ``EditorConfig`` and other coding standards files found in the project with the latest standard from XenoDevOps.
+```
+DevOps -sync
+```
+
 ## References
 * https://docs.microsoft.com/en-us/visualstudio/ide/how-to-create-project-templates?view=vs-2019
 * https://docs.microsoft.com/en-us/visualstudio/ide/how-to-create-multi-project-templates?view=vs-2019
 * https://docs.microsoft.com/en-us/visualstudio/ide/template-tags?view=vs-2019
+* Templates
+  * [Prism.Templates](https://github.com/PrismLibrary/Prism.Templates)
+  * [Prism.Forms.QuickstartTemplates](https://dotnetnew.azurewebsites.net/template/Prism.Forms.QuickstartTemplates/PrismLibrary.Xamarin.Forms.QuickStart.CSharp)
+  * [CLI Templates](https://docs.microsoft.com/en-us/dotnet/core/tutorials/cli-templates-create-project-template#:~:text=In%20your%20terminal%2C%20navigate%20to,to%20create%20a%20new%20template.)
+  * [Available Templates](https://github.com/dotnet/templating/wiki/Available-templates-for-dotnet-new)
+  * [Sample - Multi-Project](https://github.com/dotnet/dotnet-template-samples/tree/master/05-multi-project/.template.config)
+
+
